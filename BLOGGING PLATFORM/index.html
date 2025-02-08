@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogging Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>My Blogging Platform</h1>
+      <nav>
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+        <button id="logoutBtn" style="display: none">Logout</button>
+      </nav>
+    </header>
+    <main>
+      <section id="authSection">
+        <form id="loginForm" style="display: none">
+          <h2>Login</h2>
+          <input
+            type="text"
+            id="loginUsername"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+        <form id="signupForm" style="display: none">
+          <h2>Sign Up</h2>
+          <input
+            type="text"
+            id="signupUsername"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+      <section id="blogSection" style="display: none">
+        <h2>Welcome, <span id="userDisplayName"></span>!</h2>
+        <button id="createPostBtn">Create New Post</button>
+        <div id="postsContainer"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
